@@ -7,20 +7,20 @@ public class Student {
 
     // TODO: khai báo các phương thức getter, setter cho Student
 	
-	public void setName(String name1){
-		this.name = name1;}
+	public void setName(String name){
+		this.name = name;}
 	public String getName(){
 		return name;}	
-	public void setId(String id1){
-		this.id = id1;}
+	public void setId(String id){
+		this.id = id;}
 	public String getId(){	
 		return id;}
-	public void  setGroup(String group1){
-		this.group = group1;}
+	public void  setGroup(String group){
+		this.group = group;}
 	public String getGroup(){
 		return group;}
-	public void getEmail(String email1){
-		this.email=email1;}
+	public void getEmail(String email){
+		this.email=email;}
 	public String getEmail(){
 		return email;}
     /**
@@ -60,13 +60,13 @@ public class Student {
 
     public String getInfo() {
         // TODO:
-			Symstem.out.println(name + "\n");
+			Symstem.out.println(name + this.name);
 			
-			Symstem.out.println(id + "\n");
+			Symstem.out.println(id + this.id);
 			
-			Symstem.out.println(group + "\n");
+			Symstem.out.println(group + this.group);
 			
-			Symstem.out.println(email + "\n");
-        return null; // xóa dòng này sau khi cài đặt
+			Symstem.out.println(email + this.email);
+        return null;
     }
 }
