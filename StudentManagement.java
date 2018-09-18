@@ -2,22 +2,19 @@ package week1;
 
 public class StudentManagement {
 
-    public Student [] array=new Student[100];
-
-    public boolean sameGroup(Student s1, Student s2) {
-        if(s1.group==s2.group)return true;
-		
-        else return false; // xóa dòng này sau khi cài đặt
-    }
+    	// TODO: khai báo thuộc tính students là array chứa các đối tượng thuộc lớp Student (max. 100)
+   Student[] students = new Student[100];
+   int a=0;
+   public void add(Student hs)
+   {
+   students[a++] = hs;
+   }
+    public static boolean sameGroup(Student s1, Student s2) {
+		return s1.getgroup()==s2.getgroup();
 
     void studentsByGroup(){
         // TODO:
-		String namegroup;
-		for(int i=0; i<array.length;i++){
-            if(array[i].group == namegroup){
-               array[i].getInfo();
-            }
-        }
+
     }
 
     void removeStudent(String id) {
