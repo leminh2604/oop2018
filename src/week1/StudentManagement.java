@@ -52,5 +52,24 @@ public class StudentManagement {
 
     public static void main(String[] args) {
         // TODO:
+        Student m = new Student();
+        m.getInfo();
+        Student m1= new Student("Le Sy Minh","17020894","hoangtucoc2604@gmail.com");
+        m1.getInfo();
+        Student m2= new Student(m1);
+        m2.getInfo();
+
+        Student s1 = new Student();
+        s1.setName("Nhu Thao");
+        s1.setGroup("INT20041");
+        Student s2 = new Student();
+        s2.setName("Loc Vu");
+        s2.setGroup("INT20041");
+        Student s3 = new Student();
+        s3.setName("Thu Trang");
+        s3.setGroup("INT20042");
+
+        StudentManagement sv = new StudentManagement();
+        System.out.println(sv.sameGroup(s1,s2));
     }
 }
