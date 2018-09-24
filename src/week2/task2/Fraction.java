@@ -3,9 +3,13 @@ package week2.task2;
 public class Fraction {
 
     // TODO: khai báo các thuộc tính
-
+    int tuso;
+    int mauso;
+    
     public Fraction(int numerator, int denominator) {
         // TODO: khởi tạo giá trị cho các thuộc tính numberator (tử số), denominator (mẫu số)
+        this.tuso=numerator;
+        this.mauso=denominator;
     }
 
     public Fraction add(Fraction other) {
