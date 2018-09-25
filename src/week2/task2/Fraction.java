@@ -45,7 +45,7 @@ public class Fraction {
         phanso.numerator=((other.numerator)*(this.denominator))+((other.denominator)*(this.numerator));
         phanso.denominator=((this.denominator)*(other.denominator));
         phanso.toiGianPhanSo();
-        System.out.println("Tổng hai phân số = " + phanso.numerator + "/" + phanso.denominator);
+        System.out.println("Tong hai phan so = " + phanso.numerator + "/" + phanso.denominator);
         return phanso;
     }
 
@@ -55,7 +55,7 @@ public class Fraction {
         phanso.numerator=((this.numerator)*(other.denominator))-((this.denominator)*(other.numerator));
         phanso.denominator=((this.denominator)*(other.denominator));
         phanso.toiGianPhanSo();
-        System.out.println("Hiệu hai phân số = " + phanso.numerator + "/" + phanso.denominator);
+        System.out.println("Hieu hai phan so = " + phanso.numerator + "/" + phanso.denominator);
         return phanso;
     }
 
@@ -65,7 +65,7 @@ public class Fraction {
         phanso.numerator=((other.numerator)*(this.numerator));
         phanso.denominator=((this.denominator)*(other.denominator));
         phanso.toiGianPhanSo();
-        System.out.println("Tích hai phân số = " + phanso.numerator + "/" + phanso.denominator);
+        System.out.println("Tich hai phan so = " + phanso.numerator + "/" + phanso.denominator);
         return phanso;
     }
 
@@ -75,7 +75,7 @@ public class Fraction {
         phanso.numerator=((this.numerator)*(other.denominator));
         phanso.denominator=((this.denominator)*(other.numerator));
         phanso.toiGianPhanSo();
-        System.out.println("Thương hai phân số = " + phanso.numerator + "/" + phanso.denominator);
+        System.out.println("Thuong hai phan so = " + phanso.numerator + "/" + phanso.denominator);
         return phanso;
         
     }
