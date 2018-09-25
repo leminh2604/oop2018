@@ -4,7 +4,7 @@ class hinhhop {
   int chieudai;
 	int chieurong;
 	int chieucao;
-	// khai bao thong tin  hinh hop
+	// khai báo kích thước hình hộp
   public void SetChieudai(int chieudai)
   {
 	  this.chieudai=chieudai;
@@ -32,19 +32,19 @@ class hinhhop {
   
   public int dientichtoanphan()
   {
-    //tinh dien tich toan phan
+    // tính diện tích toàn phần
 	  return chieudai*chieurong*2+chieurong*chieucao*2+chieudai*chieucao*2;
   }
   
   public int dientichxungquanh()
   {
-    //tinh dien tich xung quanh
+    // tính diện tích xung quanh
 	  return 2*chieucao*(chieudai+chieurong);
   }
   
   public int thetich()
   {
-    //tinh the tich
+    // tính thể tích
 	  return chieudai*chieurong*chieucao;
   }
 
@@ -61,7 +61,7 @@ class connguoi{
 	int chieucao;
 	int cannang;
 	int iq;
-	//khai bao chi so nguoi
+	// khai báo chỉ số cơ bản ở người
   public void SetChieucao(int chieucao)
   {
 	  this.chieucao=chieucao;
@@ -92,21 +92,21 @@ class connguoi{
 	  else if(cannang>70) {System.out.println(" beo ");}
 	  else {System.out.println(" binh thuong ");}
   }
-  // danh gia can nang
+  // đánh giá cân nặng
   public void danhgiachieucao()
   {
 	  if(cao<140){System.out.println(" thap ");}
 	  else if(cao>190){System.out.println(" qua cao ");}
 	  else {System.out.println(" binh thuong ");}
   }
-  //danh gia chieu cao
+  // đánh giá chiều cao
    public void chisothongminh()
    {
 	  if(iq>=85&&iq<=115){System.out.println(" binh thuong ");}
 	  else if(nhietdo<85){System.out.println(" IQ thap");}
 	  else {System.out.println(" IQ cao ");} 
    }
-   //danh gia chi so thong minh
+   // đánh giá chỉ số thông minh
    public static void main (String agrs[])
    {
 	   connguoi a = new connguoi();
@@ -150,21 +150,21 @@ class thoitiet
 	  else if(nhietdo<17) {System.out.println("troi ret");}
 	  else {System.out.println("on hoa");}
   }
-  // danh gia nhiet do
+  // đánh giá nhiệt độ
   public void xetdoam()
   {
 	  if(doam>50&&doam<80) {System.out.println(" tot ");}
 	  else if(doam>80){System.out.println("am cao");}
     else {System.out.println("am thap");}
   }
-  // danh gia do am
+  // đánh giá độ ẩm
   public void xetluongmuamotngay ()
   {
 	  if(luongmua>16&&luongmua<50) {System.out.println("mua vua");}
 	  else if(luongmua>50&&luongmua<100){System.out.println("mua to");}
     else if(luongmua>100){System.out.println("mua rat to");}
   }
-  // danh gia luong mua trong mot ngay
+  // đánh giá lượng mưa trong một ngày
   public static void main(String [] abc)
   {
 	  thoitiet t = new thoitiet();
