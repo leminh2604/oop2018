@@ -79,19 +79,20 @@ public class Fraction {
         return phanso;
         
     }
+    
+    public boolean equals(Object obj){
+        Fraction f = (Fraction) obj;
+        return (numerator*(f.denominator)=denominator*(f.numerator));
+    }
+    
     public static void main(String args[]){
-        Fraction f1= new Fraction(numerator,denominator);
-        Fraction f2= new Fraction(numerator,denominator);
-        public boolean equals(Object obj){
-        if((f1.numerator)*(f2.denominator)>(f1.denominator)*(f2.numerator)){
-            system.out.println("f1" + ">" + "f2");
-        }
-        else if((f1.numerator)*(f2.denominator)<(f1.denominator)*(f2.numerator)){
-            system.out.println("f1" + "<" + "f2");
-        }
-        else if((f1.numerator)*(f2.denominator)=(f1.denominator)*(f2.numerator)){
-            system.out.println("f1" + "=" + "f2");
-        }
-        }
-    }     
+        Fraction f1 = new Fraction(12,19);
+        Fraction f2 = new Fraction(1,3);
+        Fraction f3 = new Fraction(2,9);
+        f3=f1.add(f2);
+        if(f2.equals(f3))
+            system.out.println("true");
+        else
+            system.out.println("false");
+    }
 }
