@@ -6,7 +6,6 @@ public class Task1 {
         // TODO: Tính ước chung lớn nhất của 2 số a, b
         if(b==0) return a;
         return gcd(b;a%b);
-        return 0;
     }
 
     public static int fibonacci(int n) {
