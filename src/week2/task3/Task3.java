@@ -1,5 +1,5 @@
 package week2.task3;
-
+//TODO: khai báo 3 class tương ứng với 3 đối tượng thực tế ở dưới
 class hinhhop {
   int chieudai;
 	int chieurong;
@@ -172,5 +172,3 @@ class thoitiet
 	  t.xetluongmuamotngay();
   }
 }
-
-//TODO: khai báo 3 class tương ứng với 3 đối tượng thực tế ở dưới
