@@ -40,7 +40,7 @@ public class Fraction {
     }
         
     public Fraction add(Fraction other) {
-        // TODO: Phương thức cộng hai phân số (this và other), trả ve đối tượng Fraction mới
+        // TODO: Phương thức cộng hai phân số (this và other), trả đối tượng Fraction mới
         Fraction phanso= new Fraction(numerator,denominator);
         phanso.numerator=((other.numerator)*(this.denominator))+((other.denominator)*(this.numerator));
         phanso.denominator=((this.denominator)*(other.denominator));
@@ -50,7 +50,7 @@ public class Fraction {
     }
 
     public Fraction subtract(Fraction other) {
-        // TODO: Phương thức trừ hai phân số (this và other), trả ve đối tượng Fraction mới
+        // TODO: Phương thức trừ hai phân số (this và other), trả đối tượng Fraction mới
         Fraction phanso= new Fraction(numerator,denominator);
         phanso.numerator=((this.numerator)*(other.denominator))-((this.denominator)*(other.numerator));
         phanso.denominator=((this.denominator)*(other.denominator));
@@ -60,7 +60,7 @@ public class Fraction {
     }
 
     public Fraction multiply(Fraction other) {
-        // TODO: Phương thức nhân hai phân số (this và other), trả ve đối tượng Fraction mới
+        // TODO: Phương thức nhân hai phân số (this và other), trả đối tượng Fraction mới
         Fraction phanso= new Fraction(numerator,denominator);
         phanso.numerator=((other.numerator)*(this.numerator));
         phanso.denominator=((this.denominator)*(other.denominator));
@@ -70,7 +70,7 @@ public class Fraction {
     }
 
     public Fraction divide(Fraction other) {
-        // TODO: Phương thức chia hai phân số (this và other), trả ve đối tượng Fraction mới
+        // TODO: Phương thức chia hai phân số (this và other), trả đối tượng Fraction mới
         Fraction phanso= new Fraction(numerator,denominator);
         phanso.numerator=((this.numerator)*(other.denominator));
         phanso.denominator=((this.denominator)*(other.numerator));
@@ -82,7 +82,7 @@ public class Fraction {
     
     public boolean equals(Object obj){
         Fraction f = (Fraction) obj;
-        return (numerator*(f.denominator)=denominator*(f.numerator));
+        return (numerator*(f.denominator)==denominator*(f.numerator));
     }
     
     public static void main(String args[]){
@@ -91,8 +91,8 @@ public class Fraction {
         Fraction f3 = new Fraction(2,9);
         f3=f1.add(f2);
         if(f2.equals(f3))
-            system.out.println("true");
+            System.out.println("true");
         else
-            system.out.println("false");
+            System.out.println("false");
     }
 }
