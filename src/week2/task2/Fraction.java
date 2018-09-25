@@ -35,8 +35,8 @@ public class Fraction {
         
     public void toiGianPhanSo() {
         int i = gcd(this.getNumerator(), this.getDenominator());
-        this.setTu(this.getNumerator() / i);
-        this.setMau(this.getDenominator() / i);
+        this.setNumerator(this.getNumerator() / i);
+        this.setDenominator(this.getDenominator() / i);
     }
         
     public Fraction add(Fraction other) {
