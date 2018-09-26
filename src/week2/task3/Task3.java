@@ -165,7 +165,7 @@ class thoitiet
     else if(luongmua>100){System.out.println("mua rat to");}
   }
   // đánh giá lượng mưa trong một ngày
-  public static void main(String [] abc)
+  public static void main(String agrs[])
   {
 	  thoitiet t = new thoitiet();
 	  t.SetLuongmua(90);
