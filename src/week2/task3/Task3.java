@@ -95,8 +95,8 @@ class connguoi{
   // đánh giá cân nặng
   public void danhgiachieucao()
   {
-	  if(cao<140){System.out.println(" thap ");}
-	  else if(cao>190){System.out.println(" qua cao ");}
+	  if(chieucao<140){System.out.println(" thap ");}
+	  else if(chieucao>190){System.out.println(" qua cao ");}
 	  else {System.out.println(" binh thuong ");}
   }
   // đánh giá chiều cao
