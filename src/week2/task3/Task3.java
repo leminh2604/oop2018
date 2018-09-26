@@ -128,7 +128,7 @@ class thoitiet
   {
 	  return nhietdo;
   }
-  public void SetDoam(String doam)
+  public void SetDoam(int doam)
   {
 	  this.doam=doam;
   }
