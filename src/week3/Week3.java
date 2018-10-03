@@ -32,10 +32,4 @@ public class Week3{
             return "Beo Phi";
         return null;
     }
-    public static void main(String agrs[]){
-        System.out.println(max(21,48));
-        int array[]={12,15,17,2};
-        System.out.println(minOfArray(array));
-        System.out.println(calculateBMI(57,1.73));
-}
 }
