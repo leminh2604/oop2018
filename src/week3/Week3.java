@@ -26,9 +26,9 @@ public class Week3{
             return "Thieu can";
         else if(18.5<=x && x<23)
             return "Binh Thuong";
-        else if(23<=x && x<25)
+        else if(23<=x && x<=25)
             return "Thua Can";
-        else if(x>=25)
+        else if(x>25)
             return "Beo Phi";
         return null;
     }
