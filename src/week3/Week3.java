@@ -23,13 +23,13 @@ public class Week3{
         // TODO: Viết chương trình tính chỉ số BMI và in ra kết quả đánh giá
         double x= (double) ((weight)/((height)*(height)));
         if(x<18.5)
-            return "Thieu can";
+            return "Thiếu cân";
         else if(18.5<=x && x<23)
-            return "Binh Thuong";
+            return "Bình thường";
         else if(23<=x && x<=25)
-            return "Thua Can";
+            return "Thừa cân";
         else if(x>25)
-            return "Beo Phi";
+            return "Béo phì";
         return null;
     }
 }
